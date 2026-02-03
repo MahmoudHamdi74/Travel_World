@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="page_title">رحلات سياحية مميزة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h2 data-translate="brand_name">عالم السفر</h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" data-translate="nav_home">الرئيسية</a></li>
+                    <li><a href="#trips" data-translate="nav_trips">الرحلات</a></li>
+                    <li><a href="#about" data-translate="nav_about">عن الموقع</a></li>
+                    <li><a href="#contact" data-translate="nav_contact">تواصل معنا</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button onclick="changeLanguage('ar')" class="lang-btn active" id="ar-btn">العربية</button>
+                    <button onclick="changeLanguage('en')" class="lang-btn" id="en-btn">English</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-translate="hero_title">اكتشف العالم معنا</h1>
+                    <p data-translate="hero_subtitle">رحلات سياحية لا تُنسى إلى أجمل الوجهات حول العالم</p>
+                    <a href="#trips" class="btn btn-primary" data-translate="hero_button">استكشف الرحلات</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✈️</div>
+                    <h3 data-translate="feature1_title">رحلات آمنة</h3>
+                    <p data-translate="feature1_desc">نوفر لك رحلات آمنة ومريحة بأعلى معايير الجودة</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 data-translate="feature2_title">أسعار مناسبة</h3>
+                    <p data-translate="feature2_desc">عروض وأسعار تنافسية تناسب جميع الميزانيات</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 data-translate="feature3_title">وجهات متنوعة</h3>
+                    <p data-translate="feature3_desc">اختر من بين مجموعة واسعة من الوجهات السياحية</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3 data-translate="feature4_title">خدمة ممتازة</h3>
+                    <p data-translate="feature4_desc">فريق دعم متاح على مدار الساعة لخدمتك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trips Section -->
+    <section id="trips" class="trips">
+        <div class="container">
+            <h2 class="section-title" data-translate="trips_title">رحلاتنا المميزة</h2>
+            <p class="section-subtitle" data-translate="trips_subtitle">اختر الرحلة المناسبة لك</p>
+            
+            <div class="trips-grid">
+                <!-- Trip 1: Dubai -->
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800');">
+                        <span class="trip-badge" data-translate="badge_popular">الأكثر شعبية</span>
+                    </div>
+                    <div class="trip-content">
+                        <h3 data-translate="trip1_title">رحلة إلى دبي</h3>
+                        <p class="trip-location">
+                            <span>📍</span>
+                            <span data-translate="trip1_location">دبي، الإمارات العربية المتحدة</span>
+                        </p>
+                        <p class="trip-description" data-translate="trip1_desc">استمتع بزيارة برج خليفة، دبي مول، والشواطئ الخلابة في رحلة لا تُنسى</p>
+                        <div class="trip-details">
+                            <div class="trip-duration">
+                                <span>🕒</span>
+                                <span data-translate="trip1_duration">5 أيام / 4 ليالي</span>
+                            </div>
+                            <div class="trip-price">
+                                <span class="price-label" data-translate="price_from">من</span>
+                                <span class="price-amount">$1,200</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" data-translate="book_now">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Trip 2: Turkey -->
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800');">
+                        <span class="trip-badge trip-badge-new" data-translate="badge_new">جديد</span>
+                    </div>
+                    <div class="trip-content">
+                        <h3 data-translate="trip2_title">جولة في تركيا</h3>
+                        <p class="trip-location">
+                            <span>📍</span>
+                            <span data-translate="trip2_location">اسطنبول، تركيا</span>
+                        </p>
+                        <p class="trip-description" data-translate="trip2_desc">اكتشف جمال اسطنبول التاريخية والطبيعة الخلابة في كابادوكيا</p>
+                        <div class="trip-details">
+                            <div class="trip-duration">
+                                <span>🕒</span>
+                                <span data-translate="trip2_duration">7 أيام / 6 ليالي</span>
+                            </div>
+                            <div class="trip-price">
+                                <span class="price-label" data-translate="price_from">من</span>
+                                <span class="price-amount">$950</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" data-translate="book_now">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Trip 3: Egypt -->
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=800');">
+                    </div>
+                    <div class="trip-content">
+                        <h3 data-translate="trip3_title">أسرار مصر القديمة</h3>
+                        <p class="trip-location">
+                            <span>📍</span>
+                            <span data-translate="trip3_location">القاهرة، مصر</span>
+                        </p>
+                        <p class="trip-description" data-translate="trip3_desc">زيارة الأهرامات، أبو الهول، والمتحف المصري الشهير</p>
+                        <div class="trip-details">
+                            <div class="trip-duration">
+                                <span>🕒</span>
+                                <span data-translate="trip3_duration">6 أيام / 5 ليالي</span>
+                            </div>
+                            <div class="trip-price">
+                                <span class="price-label" data-translate="price_from">من</span>
+                                <span class="price-amount">$800</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" data-translate="book_now">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Trip 4: Paris -->
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800');">
+                    </div>
+                    <div class="trip-content">
+                        <h3 data-translate="trip4_title">باريس مدينة النور</h3>
+                        <p class="trip-location">
+                            <span>📍</span>
+                            <span data-translate="trip4_location">باريس، فرنسا</span>
+                        </p>
+                        <p class="trip-description" data-translate="trip4_desc">استمتع بزيارة برج إيفل، اللوفر، وجمال نهر السين</p>
+                        <div class="trip-details">
+                            <div class="trip-duration">
+                                <span>🕒</span>
+                                <span data-translate="trip4_duration">5 أيام / 4 ليالي</span>
+                            </div>
+                            <div class="trip-price">
+                                <span class="price-label" data-translate="price_from">من</span>
+                                <span class="price-amount">$1,500</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" data-translate="book_now">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Trip 5: Maldives -->
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800');">
+                        <span class="trip-badge trip-badge-luxury" data-translate="badge_luxury">فاخر</span>
+                    </div>
+                    <div class="trip-content">
+                        <h3 data-translate="trip5_title">جزر المالديف</h3>
+                        <p class="trip-location">
+                            <span>📍</span>
+                            <span data-translate="trip5_location">جزر المالديف</span>
+                        </p>
+                        <p class="trip-description" data-translate="trip5_desc">استرخِ في أجمل الشواطئ الاستوائية في العالم</p>
+                        <div class="trip-details">
+                            <div class="trip-duration">
+                                <span>🕒</span>
+                                <span data-translate="trip5_duration">7 أيام / 6 ليالي</span>
+                            </div>
+                            <div class="trip-price">
+                                <span class="price-label" data-translate="price_from">من</span>
+                                <span class="price-amount">$2,500</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" data-translate="book_now">احجز الآن</button>
+                    </div>
+                </div>
+
+                <!-- Trip 6: London -->
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800');">
+                    </div>
+                    <div class="trip-content">
+                        <h3 data-translate="trip6_title">لندن العريقة</h3>
+                        <p class="trip-location">
+                            <span>📍</span>
+                            <span data-translate="trip6_location">لندن، المملكة المتحدة</span>
+                        </p>
+                        <p class="trip-description" data-translate="trip6_desc">جولة تاريخية في عاصمة بريطانيا وأهم معالمها</p>
+                        <div class="trip-details">
+                            <div class="trip-duration">
+                                <span>🕒</span>
+                                <span data-translate="trip6_duration">6 أيام / 5 ليالي</span>
+                            </div>
+                            <div class="trip-price">
+                                <span class="price-label" data-translate="price_from">من</span>
+                                <span class="price-amount">$1,400</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary" data-translate="book_now">احجز الآن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-translate="about_title">من نحن</h2>
+                    <p data-translate="about_desc1">نحن شركة سياحة متخصصة في تنظيم الرحلات السياحية إلى أجمل الوجهات حول العالم. نوفر لك تجربة سفر لا تُنسى مع خدمات متميزة.</p>
+                    <p data-translate="about_desc2">منذ أكثر من 10 سنوات، نساعد الآلاف من العملاء على تحقيق أحلامهم السياحية بأفضل الأسعار وأعلى مستويات الخدمة.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5000+</h3>
+                            <p data-translate="stat1">عميل سعيد</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p data-translate="stat2">وجهة سياحية</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p data-translate="stat3">سنوات خبرة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact_title">تواصل معنا</h2>
+            <p class="section-subtitle" data-translate="contact_subtitle">نحن هنا لمساعدتك</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4 data-translate="contact_phone">الهاتف</h4>
+                            <p>+971 50 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4 data-translate="contact_email">البريد الإلكتروني</h4>
+                            <p>info@travelworld.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 data-translate="contact_address">العنوان</h4>
+                            <p data-translate="contact_address_text">شارع الشيخ زايد، دبي</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <input type="text" placeholder="الاسم" data-translate-placeholder="form_name" required>
+                    <input type="email" placeholder="البريد الإلكتروني" data-translate-placeholder="form_email" required>
+                    <textarea rows="5" placeholder="رسالتك" data-translate-placeholder="form_message" required></textarea>
+                    <button type="submit" class="btn btn-primary" data-translate="form_submit">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="brand_name">عالم السفر</h3>
+                    <p data-translate="footer_desc">رحلات سياحية مميزة حول العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" data-translate="nav_home">الرئيسية</a></li>
+                        <li><a href="#trips" data-translate="nav_trips">الرحلات</a></li>
+                        <li><a href="#about" data-translate="nav_about">عن الموقع</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_social">تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer_copyright">© 2026 عالم السفر. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
